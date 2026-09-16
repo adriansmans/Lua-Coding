@@ -1,0 +1,10 @@
+local gold = 100
+local potionCost = 30
+local quantity = 3
+local totalCost = potionCost * quantity
+if local gold >= totalCost then 
+    gold = gold - totalCost
+    print("Purchase successful, Remaining gold is: " .. gold )
+else 
+    print("Not enought gold to purchase potions. You need " .. (totalCost - gold) .. " more gold.")
+end
