@@ -1,0 +1,13 @@
+local scores = {120,450, 300, 890, 600}
+local sum = 0
+local highscore = 0
+for best in ipairs(scores) do 
+    sum = sum + scores[best]
+    if highscore < scores [best] then
+        highscore = scores[best]
+    end
+end
+local average = sum / #scores 
+print("Highscore is: " .. highscore)
+print("Average score is: " .. average)
+print( "Total score is:" .. sum)
